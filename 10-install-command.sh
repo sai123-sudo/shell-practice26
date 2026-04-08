@@ -8,3 +8,5 @@ then
 else
     echo "You are running with root access"
 fi
+
+dnf install nginx -y
