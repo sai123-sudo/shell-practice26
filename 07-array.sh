@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MOVIES=("LittlleHearts" "Dhurandhar" "ProjectHM" "Dacoit")
+MOVIES=("LittlleHearts" "Dhurandhar" "Project Hail Mary" "Dacoit")
 
 echo "First Movie: ${MOVIES[0]}"
 
