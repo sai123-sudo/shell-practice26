@@ -6,4 +6,4 @@ echo "First Movie: ${MOVIES[0]}"
 
 echo "First Movie: ${MOVIES[3]}"
 
-echo "All movies: ${MOVIES[ALL]}
+echo "All movies: ${MOVIES[@]}
