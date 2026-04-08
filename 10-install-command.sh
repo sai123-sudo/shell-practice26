@@ -11,3 +11,11 @@ else
 fi
 
 dnf install nginx -y
+
+if [ $? -eq 0 ]
+then 
+    echo "Installing Mysql is ... SUCESS"
+else 
+    echo "Installing MySql is ... FAILURE"
+    exit 1
+fi
