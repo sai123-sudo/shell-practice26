@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER1=sai
+NUMBER1=100
 NUMBER2=200
 
 TIMESTAMP=$(date)
