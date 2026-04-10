@@ -17,13 +17,22 @@ then
     echo "MySql is not installed... going to install it"
     dnf install nginx -y
     if [ $? -eq 0 ]
-then 
-    echo "Installing Mysql is ... SUCESS"
-else 
+    then 
+        echo "Installing Mysql is ... SUCESS"
+    else 
    echo "Installing MySql is ... FAILURE"
    #exit 1
-fi
+    fi
 else 
    echo "MySql is already installed... Nothing to do"
    exit 1
 fi
+
+# dnf install nginx -y
+#     if [ $? -eq 0 ]
+# then 
+#     echo "Installing Mysql is ... SUCESS"
+# else 
+#    echo "Installing MySql is ... FAILURE"
+#    #exit 1
+# fi
