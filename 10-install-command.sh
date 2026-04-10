@@ -5,7 +5,7 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]
 then
     echo "ERROR:: this not root uuser"
-    exit 1
+    #exit 1
 else
     echo "You are running with root access"
 fi
@@ -16,6 +16,6 @@ if [ $? -eq 0 ]
 then 
     echo "Installing Mysql is ... SUCESS"
 else 
-    echo "Installing MySql is ... FAILURE"
+   # echo "Installing MySql is ... FAILURE"
     exit 1
 fi
