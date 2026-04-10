@@ -25,7 +25,6 @@ then
     fi
 else 
    echo "MySql is already installed... Nothing to do"
-   exit 1
 fi
 
 # dnf install nginx -y
