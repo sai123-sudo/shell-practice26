@@ -10,6 +10,16 @@ else
     echo "You are running with root access"
 fi
 
+dnf list install nginx -y
+
+if [ $? -eq 0 ]
+then 
+    echo "MySql is not installed... going to install it"
+else 
+   echo "MySql is already installed... Nothing to do"
+   exit 1
+fi
+
 dnf install nginx -y
 
 if [ $? -eq 0 ]
