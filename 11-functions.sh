@@ -50,12 +50,12 @@ else
    echo "nginx is already installed... Nothing to do"
 fi
 
-dnf list install mongodb-org
+dnf list install mongodb
 if [ $? -ne 0 ]
 then 
     echo "mongod is not installed... going to install it"
-    dnf install mongodb-org -y
-    VALIDATE $? "mongodb-org"
+    dnf install mongodb -y
+    VALIDATE $? "mongodb"
 else 
    echo "mongod is already installed... Nothing to do"
 fi
