@@ -41,7 +41,7 @@ else
     echo "python3 is already installed...Nothing to do"
 fi
 
-dnf list installed nginx
+dnf list install nginx
 if [ $? -ne 0 ]
 then
     echo "nginx is not installed... going to install it"
