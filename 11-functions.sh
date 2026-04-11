@@ -49,3 +49,13 @@ then
 else 
    echo "nginx is already installed... Nothing to do"
 fi
+
+dnf list install mongod
+if [ $? -ne 0 ]
+then 
+    echo "mongod is not installed... going to install it"
+    dnf install mongod -y
+    VALIDATE $? "mongod"
+else 
+   echo "mongod is already installed... Nothing to do"
+fi
