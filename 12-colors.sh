@@ -10,7 +10,7 @@ do
   echo -e "\e[31m $i \e[0m"
 done
 
-for((i=10; i<=20; i++))
+for((i=11; i<=20; i++))
 do
   echo -e "\e[35m $i \e[0m"
 done
