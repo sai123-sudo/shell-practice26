@@ -12,5 +12,5 @@ done
 
 for((i=10; i<=20; i++))
 do
-  echo -e "\e[37m $i \e[0m"
+  echo -e "\e[35m $i \e[0m"
 done
