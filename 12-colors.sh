@@ -7,5 +7,5 @@ echo -e "\e[34m hello world"
 
 for((i=1; i<=10; i++))
 do
-  echo $i
+  echo -e "\e[31m $i \e[0m"
 done
