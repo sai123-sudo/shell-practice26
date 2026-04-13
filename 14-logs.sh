@@ -15,7 +15,7 @@ echo "Script started executing at: $(date)" &>>$LOG_FILE
 
 if [ $USERID -ne 0 ]
 then
-    echo -e "$R ERROR:: Please run this script with root access $N" &>>$LOG_FILE
+    echo -e "$R ERROR:: Please run this script with root access $N" | tee -a &>>$LOG_FILE
     exit 1 #give other than 0 upto 127
 else
     echo -e "$F You are running with root access $N" &>>$LOG_FILE
@@ -39,7 +39,7 @@ then
     dnf install mysql -y &>>$LOG_FILE
     VALIDATE $? "MySQL"
 else
-    echo -e "Nothing to do MySQl... $Y already installed $N" &>>$LOG_FILE
+    echo -e "Nothing to do MySQl... $Y already installed $N" | tee -a &>>$LOG_FILE
 fi
 
 dnf list installed python3 &>>$LOG_FILE
