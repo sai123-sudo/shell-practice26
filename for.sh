@@ -3,6 +3,6 @@
 for i in {1..10}
 
 do  
-   echo -e "[\31m $i "
+   echo -e "\e[35m $i  \e[0m"
 done   
 
