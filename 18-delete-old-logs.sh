@@ -31,7 +31,7 @@ mkdir -p $LOGS_FOLDER
 
 echo "Script started executing at $(date)"
 
-FILES_TO_DELETE=$(find . $SOURCE_DIR "*.log" -mtime +14) | tee -a $LOG_FILE
+FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -mtime +14)
 
 while IFS= read -r line
 do 
